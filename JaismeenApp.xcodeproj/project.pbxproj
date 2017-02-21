@@ -13,6 +13,9 @@
 		186C92891E5D007B00371461 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 186C92871E5D007B00371461 /* Main.storyboard */; };
 		186C928B1E5D007B00371461 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 186C928A1E5D007B00371461 /* Assets.xcassets */; };
 		186C928E1E5D007B00371461 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 186C928C1E5D007B00371461 /* LaunchScreen.storyboard */; };
+		186C92961E5D00E300371461 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 186C92951E5D00E300371461 /* GoogleService-Info.plist */; };
+		186C92981E5D01E700371461 /* TaskManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 186C92971E5D01E700371461 /* TaskManager.swift */; };
+		39A67CD6C5B03C26D2FD17A2 /* Pods_JaismeenApp.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A9FA12350912F285304584C4 /* Pods_JaismeenApp.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +27,11 @@
 		186C928A1E5D007B00371461 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		186C928D1E5D007B00371461 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		186C928F1E5D007C00371461 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		186C92951E5D00E300371461 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		186C92971E5D01E700371461 /* TaskManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TaskManager.swift; sourceTree = "<group>"; };
+		66EEBD71F17330DD4FA65251 /* Pods-JaismeenApp.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-JaismeenApp.debug.xcconfig"; path = "Pods/Target Support Files/Pods-JaismeenApp/Pods-JaismeenApp.debug.xcconfig"; sourceTree = "<group>"; };
+		7EB84264B7299DCB5F126795 /* Pods-JaismeenApp.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-JaismeenApp.release.xcconfig"; path = "Pods/Target Support Files/Pods-JaismeenApp/Pods-JaismeenApp.release.xcconfig"; sourceTree = "<group>"; };
+		A9FA12350912F285304584C4 /* Pods_JaismeenApp.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_JaismeenApp.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -31,6 +39,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				39A67CD6C5B03C26D2FD17A2 /* Pods_JaismeenApp.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -42,6 +51,8 @@
 			children = (
 				186C92801E5D007B00371461 /* JaismeenApp */,
 				186C927F1E5D007B00371461 /* Products */,
+				42A812813A29802F364229C2 /* Pods */,
+				ED25B0F3D4322CA48CEC66F0 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -58,13 +69,32 @@
 			children = (
 				186C92811E5D007B00371461 /* AppDelegate.swift */,
 				186C92831E5D007B00371461 /* FirstViewController.swift */,
+				186C92971E5D01E700371461 /* TaskManager.swift */,
 				186C92851E5D007B00371461 /* SecondViewController.swift */,
 				186C92871E5D007B00371461 /* Main.storyboard */,
 				186C928A1E5D007B00371461 /* Assets.xcassets */,
 				186C928C1E5D007B00371461 /* LaunchScreen.storyboard */,
+				186C92951E5D00E300371461 /* GoogleService-Info.plist */,
 				186C928F1E5D007C00371461 /* Info.plist */,
 			);
 			path = JaismeenApp;
+			sourceTree = "<group>";
+		};
+		42A812813A29802F364229C2 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				66EEBD71F17330DD4FA65251 /* Pods-JaismeenApp.debug.xcconfig */,
+				7EB84264B7299DCB5F126795 /* Pods-JaismeenApp.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		ED25B0F3D4322CA48CEC66F0 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				A9FA12350912F285304584C4 /* Pods_JaismeenApp.framework */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -74,9 +104,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 186C92921E5D007C00371461 /* Build configuration list for PBXNativeTarget "JaismeenApp" */;
 			buildPhases = (
+				F396A4545E11334F5FE8E753 /* [CP] Check Pods Manifest.lock */,
 				186C927A1E5D007B00371461 /* Sources */,
 				186C927B1E5D007B00371461 /* Frameworks */,
 				186C927C1E5D007B00371461 /* Resources */,
+				7BBB8457BFABC388C4F40BA0 /* [CP] Embed Pods Frameworks */,
+				DAA3C2B66B372802F68D8C72 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -127,12 +160,61 @@
 			buildActionMask = 2147483647;
 			files = (
 				186C928E1E5D007B00371461 /* LaunchScreen.storyboard in Resources */,
+				186C92961E5D00E300371461 /* GoogleService-Info.plist in Resources */,
 				186C928B1E5D007B00371461 /* Assets.xcassets in Resources */,
 				186C92891E5D007B00371461 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		7BBB8457BFABC388C4F40BA0 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-JaismeenApp/Pods-JaismeenApp-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		DAA3C2B66B372802F68D8C72 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-JaismeenApp/Pods-JaismeenApp-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		F396A4545E11334F5FE8E753 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		186C927A1E5D007B00371461 /* Sources */ = {
@@ -141,6 +223,7 @@
 			files = (
 				186C92861E5D007B00371461 /* SecondViewController.swift in Sources */,
 				186C92821E5D007B00371461 /* AppDelegate.swift in Sources */,
+				186C92981E5D01E700371461 /* TaskManager.swift in Sources */,
 				186C92841E5D007B00371461 /* FirstViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -262,6 +345,7 @@
 		};
 		186C92931E5D007C00371461 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 66EEBD71F17330DD4FA65251 /* Pods-JaismeenApp.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = JaismeenApp/Info.plist;
@@ -274,6 +358,7 @@
 		};
 		186C92941E5D007C00371461 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 7EB84264B7299DCB5F126795 /* Pods-JaismeenApp.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = JaismeenApp/Info.plist;
@@ -303,6 +388,7 @@
 				186C92941E5D007C00371461 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
