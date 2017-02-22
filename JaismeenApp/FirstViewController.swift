@@ -10,16 +10,22 @@ import UIKit
 import Firebase
 
 class FirstViewController: UIViewController,UITableViewDelegate,UITableViewDataSource {
-    
-    var data:[String]=["Test","New","One More"]
-    
     @IBOutlet weak var myTable: UITableView!
     
-    var quantityCell:[String]=["1","2","3"]
+    var itemList = [ToDoItem]()
+    
+    var toitem = ToDoItem()
+    
+    var refHandle: UInt!
+    var ref: FIRDatabaseReference!
+    
+    
     
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        ref = FIRDatabase.database().reference()
+        fetchList()
         // Do any additional setup after loading the view, typically from a nib.
     }
     
@@ -30,37 +36,64 @@ class FirstViewController: UIViewController,UITableViewDelegate,UITableViewDataS
     
     public func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int
     {
-        return data.count
+        //print( "count" ,itemList.count);
+        return itemList.count
     }
     
     public func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell
     {
+        
+        
         let cell=tableView.dequeueReusableCell(withIdentifier: "Row", for: indexPath) as! TaskManager
         
-        let item = cell.viewWithTag(1) as! UILabel
-        item.text=data[indexPath.row]
-        let quantity=cell.viewWithTag(2) as! UILabel
-        quantity.text=quantityCell[indexPath.row]
+        toitem = itemList[indexPath.row]
+        
+        cell.Item.text = toitem.name
+        cell.Desc.text = toitem.description
+        cell.statusBtn.isOn = Bool(toitem.completed)!
         return cell
     }
+    
+    
+    
     func tableView(_ tableView: UITableView, commit editingStyle: UITableViewCellEditingStyle, forRowAt indexPath: IndexPath) {
         if editingStyle == .delete{
-            self.data.remove(at: indexPath.row)
+            let count: Int = indexPath.row
+            let itemName: String = itemList[count].name
+            ref.child("My To Do Items").child(itemName).removeValue();
+            self.itemList.remove(at: indexPath.row)
             self.myTable.reloadData()
         }
     }
     
     
-    
-    var searchResults = [[String : AnyObject]]()
-    
-    @IBAction func resetBtn(_ sender: UIButton) {
-        data = []
-        data.removeAll()
-        self.myTable.reloadData()
-        
+    func tableView(tableView: UITableView, didSelectRowAtIndexPath indexPath: NSIndexPath)
+    {
+        self.performSegue(withIdentifier: "edit", sender: self)
     }
     
     
+    func fetchList(){
+        let eref = FIRDatabase.database().reference().child("My To Do Items")
+        var todoitems = ToDoItem()
+        eref.observe(.childAdded, with: { (snapshot) in
+            
+            if let dictionary = snapshot.value as? [String : AnyObject]  {
+                
+                
+                todoitems.name = dictionary["Name"] as! String
+                todoitems.description = dictionary["Description"] as! String
+                todoitems.completed = dictionary["Completed"] as! String
+            }
+            
+            self.itemList.append(todoitems)
+            
+            DispatchQueue.main.async {
+                self.myTable.reloadData()
+            }
+            
+        } , withCancel: nil)
+        
+    }
 }
 
