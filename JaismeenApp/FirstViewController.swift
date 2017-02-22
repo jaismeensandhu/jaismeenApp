@@ -50,12 +50,7 @@ class FirstViewController: UIViewController,UITableViewDelegate,UITableViewDataS
         }
     }
     
-    @IBAction func SaveTable(_ sender: UIButton) {
-        
-        var ref=FIRDatabase.database().reference().child("My ToDo List")
-        let newRef=ref.childByAutoId()
-        newRef.setValue(data)
-    }
+    
     
     var searchResults = [[String : AnyObject]]()
     
