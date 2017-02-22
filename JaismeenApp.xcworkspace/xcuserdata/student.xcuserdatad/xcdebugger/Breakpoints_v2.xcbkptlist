@@ -6,7 +6,7 @@
       <BreakpointProxy
          BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
          <BreakpointContent
-            shouldBeEnabled = "Yes"
+            shouldBeEnabled = "No"
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "JaismeenApp/TaskManager.swift"
@@ -19,14 +19,14 @@
             landmarkType = "3">
             <Locations>
                <Location
-                  shouldBeEnabled = "Yes"
+                  shouldBeEnabled = "No"
                   ignoreCount = "0"
                   continueAfterRunningActions = "No"
                   symbolName = "JaismeenApp.TaskManager.Desc.setter : weak Swift.ImplicitlyUnwrappedOptional&lt;__ObjC.UILabel&gt;"
                   moduleName = "JaismeenApp"
                   usesParentBreakpointCondition = "Yes"
                   urlString = "file:///Users/student/Documents/38728/iOS%20Advanced/jaismeenApp/JaismeenApp/TaskManager.swift"
-                  timestampString = "509428033.318356"
+                  timestampString = "509428405.842432"
                   startingColumnNumber = "9223372036854775807"
                   endingColumnNumber = "9223372036854775807"
                   startingLineNumber = "14"
@@ -34,14 +34,14 @@
                   offsetFromSymbolStart = "42">
                </Location>
                <Location
-                  shouldBeEnabled = "Yes"
+                  shouldBeEnabled = "No"
                   ignoreCount = "0"
                   continueAfterRunningActions = "No"
                   symbolName = "JaismeenApp.TaskManager.init (style : __C.UITableViewCellStyle, reuseIdentifier : Swift.Optional&lt;Swift.String&gt;) -&gt; JaismeenApp.TaskManager"
                   moduleName = "JaismeenApp"
                   usesParentBreakpointCondition = "Yes"
                   urlString = "file:///Users/student/Documents/38728/iOS%20Advanced/jaismeenApp/JaismeenApp/TaskManager.swift"
-                  timestampString = "509428033.320872"
+                  timestampString = "509428405.844747"
                   startingColumnNumber = "9223372036854775807"
                   endingColumnNumber = "9223372036854775807"
                   startingLineNumber = "14"
@@ -49,14 +49,14 @@
                   offsetFromSymbolStart = "70">
                </Location>
                <Location
-                  shouldBeEnabled = "Yes"
+                  shouldBeEnabled = "No"
                   ignoreCount = "0"
                   continueAfterRunningActions = "No"
                   symbolName = "JaismeenApp.TaskManager.init (coder : __ObjC.NSCoder) -&gt; Swift.Optional&lt;JaismeenApp.TaskManager&gt;"
                   moduleName = "JaismeenApp"
                   usesParentBreakpointCondition = "Yes"
                   urlString = "file:///Users/student/Documents/38728/iOS%20Advanced/jaismeenApp/JaismeenApp/TaskManager.swift"
-                  timestampString = "509428033.323331"
+                  timestampString = "509428405.847062"
                   startingColumnNumber = "9223372036854775807"
                   endingColumnNumber = "9223372036854775807"
                   startingLineNumber = "14"

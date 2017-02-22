@@ -11,6 +11,7 @@ import UIKit
 class TaskManager: UITableViewCell {
    
    
+    @IBOutlet weak var editbtn: UIButton!
     @IBOutlet weak var Desc: UILabel!
     @IBOutlet weak var Item: UILabel!
     
@@ -20,7 +21,20 @@ class TaskManager: UITableViewCell {
     }
     
    
-    @IBAction func changeStatus(_ sender: UISwitch) {
+   @IBAction func changeStatus(_ sender: UISwitch) {
+        if sender.isOn==true
+        {
+            Item.textColor = UIColor.black
+            Desc.textColor = UIColor.black
+            editbtn.isEnabled=true
+           
+        }
+        else
+        {
+            Item.textColor = UIColor.lightGray
+            Desc.textColor = UIColor.lightGray
+             editbtn.isEnabled=false
+        }
     }
     
     

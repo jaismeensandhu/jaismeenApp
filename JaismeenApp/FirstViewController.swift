@@ -37,7 +37,7 @@ class FirstViewController: UIViewController,UITableViewDelegate,UITableViewDataS
     {
         let cell=tableView.dequeueReusableCell(withIdentifier: "Row", for: indexPath) as! TaskManager
         
-        let item = cell.viewWithTag(1) as! UITextField
+        let item = cell.viewWithTag(1) as! UILabel
         item.text=data[indexPath.row]
         let quantity=cell.viewWithTag(2) as! UILabel
         quantity.text=quantityCell[indexPath.row]
