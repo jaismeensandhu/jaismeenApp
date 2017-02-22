@@ -1,0 +1,30 @@
+{
+  "DVTSourceControlWorkspaceBlueprintPrimaryRemoteRepositoryKey" : "81794BB299C74C2073AD48C851BB8687807E3C98",
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyRepositoryLocationsKey" : {
+
+  },
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyStatesKey" : {
+    "81794BB299C74C2073AD48C851BB8687807E3C98" : 9223372036854775807,
+    "172491D77F14892D15D1C0437BC2A703C1871731" : 9223372036854775807
+  },
+  "DVTSourceControlWorkspaceBlueprintIdentifierKey" : "906B7610-2484-41A8-B95B-E0B8BE3A08EE",
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyPathsKey" : {
+    "81794BB299C74C2073AD48C851BB8687807E3C98" : "jaismeenApp\/",
+    "172491D77F14892D15D1C0437BC2A703C1871731" : ""
+  },
+  "DVTSourceControlWorkspaceBlueprintNameKey" : "JaismeenApp",
+  "DVTSourceControlWorkspaceBlueprintVersion" : 204,
+  "DVTSourceControlWorkspaceBlueprintRelativePathToProjectKey" : "JaismeenApp.xcworkspace",
+  "DVTSourceControlWorkspaceBlueprintRemoteRepositoriesKey" : [
+    {
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "https:\/\/github.com\/jaismeensandhu\/cloudyweather.git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "172491D77F14892D15D1C0437BC2A703C1871731"
+    },
+    {
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "https:\/\/github.com\/jaismeensandhu\/jaismeenApp",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "81794BB299C74C2073AD48C851BB8687807E3C98"
+    }
+  ]
+}
