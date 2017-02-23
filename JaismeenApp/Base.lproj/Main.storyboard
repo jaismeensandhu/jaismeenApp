@@ -39,7 +39,7 @@
                                         <rect key="frame" x="0.0" y="28" width="375" height="64"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="0te-qa-6Uh" id="PSw-Ar-s91">
-                                            <rect key="frame" x="0.0" y="0.0" width="375" height="63"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="375" height="63.5"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <label opaque="NO" userInteractionEnabled="NO" tag="2" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Item" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="SMm-rU-MpL">
@@ -90,6 +90,7 @@
                                             <outlet property="Desc" destination="Wb1-Lk-Q2z" id="seF-ub-YcD"/>
                                             <outlet property="Item" destination="SMm-rU-MpL" id="fb0-Kd-cJ5"/>
                                             <outlet property="editbtn" destination="Pbg-gG-EIr" id="7Tw-XU-c2O"/>
+                                            <outlet property="myTable" destination="yTa-LL-PQR" id="1Nv-c1-R4s"/>
                                             <outlet property="statusBtn" destination="Gru-9Z-Hb5" id="1Xv-rm-i1s"/>
                                         </connections>
                                     </tableViewCell>

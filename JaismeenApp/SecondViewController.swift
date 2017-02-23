@@ -13,10 +13,12 @@ struct ToDoItem {
     var description: String = ""
     var name: String = ""
     var completed: String = ""
+    var key: String = ""
     func getDict() -> [String:String] {
         let dict = ["Name": self.name,
         "Description": self.description,
         "Completed":self.completed
+            
         ]
         return dict
     }
@@ -33,7 +35,7 @@ class SecondViewController: UIViewController {
     
     @IBOutlet weak var Desc: UITextField!
     @IBOutlet weak var Item: UITextField!
-    
+    @IBOutlet weak var myTable: UITableView!
     var ref: FIRDatabaseReference!
     
  
@@ -47,7 +49,7 @@ class SecondViewController: UIViewController {
         saveItem.description = Desc.text!
         
         ref = FIRDatabase.database().reference()
-        ref.child("My To Do Items").child(Item.text!).updateChildValues(saveItem.getDict())
+        ref.child("My To Do Items").childByAutoId().updateChildValues(saveItem.getDict())
         Item.text=""
         Desc.text=""
         

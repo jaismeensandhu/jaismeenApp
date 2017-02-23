@@ -13,9 +13,7 @@ class FirstViewController: UIViewController,UITableViewDelegate,UITableViewDataS
     @IBOutlet weak var myTable: UITableView!
     
     var itemList = [ToDoItem]()
-    
     var toitem = ToDoItem()
-    
     var refHandle: UInt!
     var ref: FIRDatabaseReference!
     
@@ -59,18 +57,13 @@ class FirstViewController: UIViewController,UITableViewDelegate,UITableViewDataS
     func tableView(_ tableView: UITableView, commit editingStyle: UITableViewCellEditingStyle, forRowAt indexPath: IndexPath) {
         if editingStyle == .delete{
             let count: Int = indexPath.row
-            let itemName: String = itemList[count].name
-            ref.child("My To Do Items").child(itemName).removeValue();
+            let itemkey: String = itemList[count].key
+            ref.child("My To Do Items").child(itemkey).removeValue();
             self.itemList.remove(at: indexPath.row)
             self.myTable.reloadData()
         }
     }
     
-    
-    func tableView(tableView: UITableView, didSelectRowAtIndexPath indexPath: NSIndexPath)
-    {
-        self.performSegue(withIdentifier: "edit", sender: self)
-    }
     
     
     func fetchList(){
@@ -78,9 +71,10 @@ class FirstViewController: UIViewController,UITableViewDelegate,UITableViewDataS
         var todoitems = ToDoItem()
         eref.observe(.childAdded, with: { (snapshot) in
             
+            
             if let dictionary = snapshot.value as? [String : AnyObject]  {
-                
-                
+                print( "snapshot",snapshot.key)
+                todoitems.key = snapshot.key
                 todoitems.name = dictionary["Name"] as! String
                 todoitems.description = dictionary["Description"] as! String
                 todoitems.completed = dictionary["Completed"] as! String

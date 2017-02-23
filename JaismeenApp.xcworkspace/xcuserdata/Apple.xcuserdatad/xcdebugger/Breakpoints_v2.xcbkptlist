@@ -10,13 +10,123 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "JaismeenApp/FirstViewController.swift"
-            timestampString = "509457180.591468"
+            timestampString = "509477039.0349"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "74"
-            endingLineNumber = "74"
-            landmarkName = "FirstViewController"
+            startingLineNumber = "79"
+            endingLineNumber = "79"
+            landmarkName = "fetchList()"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "JaismeenApp/TaskManager.swift"
+            timestampString = "509513036.300983"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "34"
+            endingLineNumber = "34"
+            landmarkName = "TaskManager"
             landmarkType = "3">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "JaismeenApp/TaskManager.swift"
+            timestampString = "509513277.275301"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "48"
+            endingLineNumber = "48"
+            landmarkName = "changeStatus(_:)"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "JaismeenApp/TaskManager.swift"
+            timestampString = "509513036.300983"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "33"
+            endingLineNumber = "33"
+            landmarkName = "TaskManager"
+            landmarkType = "3">
+            <Locations>
+               <Location
+                  shouldBeEnabled = "No"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "JaismeenApp.TaskManager.itemkey.getter : Swift.String"
+                  moduleName = "JaismeenApp"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/Apple/Documents/Study/MAPD/2nd%20Sem/Adv%20iOS/projects/ass/jaismeenApp/JaismeenApp/TaskManager.swift"
+                  timestampString = "509512667.857453"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "29"
+                  endingLineNumber = "29"
+                  offsetFromSymbolStart = "53">
+               </Location>
+               <Location
+                  shouldBeEnabled = "No"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "JaismeenApp.TaskManager.itemkey.setter : Swift.String"
+                  moduleName = "JaismeenApp"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/Apple/Documents/Study/MAPD/2nd%20Sem/Adv%20iOS/projects/ass/jaismeenApp/JaismeenApp/TaskManager.swift"
+                  timestampString = "509512667.874192"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "29"
+                  endingLineNumber = "29"
+                  offsetFromSymbolStart = "95">
+               </Location>
+               <Location
+                  shouldBeEnabled = "No"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "JaismeenApp.TaskManager.init (style : __C.UITableViewCellStyle, reuseIdentifier : Swift.Optional&lt;Swift.String&gt;) -&gt; JaismeenApp.TaskManager"
+                  moduleName = "JaismeenApp"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/Apple/Documents/Study/MAPD/2nd%20Sem/Adv%20iOS/projects/ass/jaismeenApp/JaismeenApp/TaskManager.swift"
+                  timestampString = "509512667.877947"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "29"
+                  endingLineNumber = "29"
+                  offsetFromSymbolStart = "494">
+               </Location>
+               <Location
+                  shouldBeEnabled = "No"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "JaismeenApp.TaskManager.init (coder : __ObjC.NSCoder) -&gt; Swift.Optional&lt;JaismeenApp.TaskManager&gt;"
+                  moduleName = "JaismeenApp"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/Apple/Documents/Study/MAPD/2nd%20Sem/Adv%20iOS/projects/ass/jaismeenApp/JaismeenApp/TaskManager.swift"
+                  timestampString = "509512667.881976"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "29"
+                  endingLineNumber = "29"
+                  offsetFromSymbolStart = "383">
+               </Location>
+            </Locations>
          </BreakpointContent>
       </BreakpointProxy>
    </Breakpoints>
