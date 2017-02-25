@@ -2,9 +2,9 @@
 //  AppDelegate.swift
 //  JaismeenApp
 //
-//  Created by Apple on 2017-02-21.
+//  Created by Jaismeen Sandhu(300877728) on 2017-02-21.
 //  Copyright © 2017 proApptive. All rights reserved.
-//
+// 
 
 import UIKit
 import Firebase

@@ -2,9 +2,9 @@
 //  SecondViewController.swift
 //  JaismeenApp
 //
-//  Created by Apple on 2017-02-21.
+//  Created by Jaismeen Sandhu(300877728) on 2017-02-21.
 //  Copyright © 2017 proApptive. All rights reserved.
-//
+// Addition Item Page
 
 import UIKit
 import Firebase
@@ -30,19 +30,12 @@ class MyToDoItem: NSObject{
 }
 
 class SecondViewController: UIViewController {
-    
-    
-    
     @IBOutlet weak var Desc: UITextField!
     @IBOutlet weak var Item: UITextField!
     @IBOutlet weak var myTable: UITableView!
     var ref: FIRDatabaseReference!
     
- 
-    
     @IBAction func submit(_ sender: UIButton) {
-        
-        
         var saveItem = ToDoItem()
         saveItem.name = Item.text!
         saveItem.completed = "true"
@@ -52,10 +45,7 @@ class SecondViewController: UIViewController {
         ref.child("My To Do Items").childByAutoId().updateChildValues(saveItem.getDict())
         Item.text=""
         Desc.text=""
-        
     }
-    
-    
     
     override func viewDidLoad() {
         super.viewDidLoad()

@@ -14,6 +14,7 @@
 		186C928B1E5D007B00371461 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 186C928A1E5D007B00371461 /* Assets.xcassets */; };
 		186C928E1E5D007B00371461 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 186C928C1E5D007B00371461 /* LaunchScreen.storyboard */; };
 		186C92961E5D00E300371461 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 186C92951E5D00E300371461 /* GoogleService-Info.plist */; };
+		18F826091E5E9CF7008A6DD9 /* EditViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18F826081E5E9CF7008A6DD9 /* EditViewController.swift */; };
 		39A67CD6C5B03C26D2FD17A2 /* Pods_JaismeenApp.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A9FA12350912F285304584C4 /* Pods_JaismeenApp.framework */; };
 		3FA606AC1E5D3EB6005E24DB /* TaskManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FA606AB1E5D3EB6005E24DB /* TaskManager.swift */; };
 /* End PBXBuildFile section */
@@ -28,6 +29,7 @@
 		186C928D1E5D007B00371461 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		186C928F1E5D007C00371461 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		186C92951E5D00E300371461 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		18F826081E5E9CF7008A6DD9 /* EditViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EditViewController.swift; sourceTree = "<group>"; };
 		3FA606AB1E5D3EB6005E24DB /* TaskManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TaskManager.swift; sourceTree = "<group>"; };
 		66EEBD71F17330DD4FA65251 /* Pods-JaismeenApp.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-JaismeenApp.debug.xcconfig"; path = "Pods/Target Support Files/Pods-JaismeenApp/Pods-JaismeenApp.debug.xcconfig"; sourceTree = "<group>"; };
 		7EB84264B7299DCB5F126795 /* Pods-JaismeenApp.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-JaismeenApp.release.xcconfig"; path = "Pods/Target Support Files/Pods-JaismeenApp/Pods-JaismeenApp.release.xcconfig"; sourceTree = "<group>"; };
@@ -70,12 +72,13 @@
 				186C92811E5D007B00371461 /* AppDelegate.swift */,
 				186C92831E5D007B00371461 /* FirstViewController.swift */,
 				186C92851E5D007B00371461 /* SecondViewController.swift */,
+				3FA606AB1E5D3EB6005E24DB /* TaskManager.swift */,
+				18F826081E5E9CF7008A6DD9 /* EditViewController.swift */,
 				186C92871E5D007B00371461 /* Main.storyboard */,
 				186C928A1E5D007B00371461 /* Assets.xcassets */,
 				186C928C1E5D007B00371461 /* LaunchScreen.storyboard */,
 				186C92951E5D00E300371461 /* GoogleService-Info.plist */,
 				186C928F1E5D007C00371461 /* Info.plist */,
-				3FA606AB1E5D3EB6005E24DB /* TaskManager.swift */,
 			);
 			path = JaismeenApp;
 			sourceTree = "<group>";
@@ -221,6 +224,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				18F826091E5E9CF7008A6DD9 /* EditViewController.swift in Sources */,
 				186C92861E5D007B00371461 /* SecondViewController.swift in Sources */,
 				186C92821E5D007B00371461 /* AppDelegate.swift in Sources */,
 				3FA606AC1E5D3EB6005E24DB /* TaskManager.swift in Sources */,

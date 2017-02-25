@@ -6,6 +6,8 @@
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11757"/>
+        <capability name="Alignment constraints to the first baseline" minToolsVersion="6.0"/>
+        <capability name="Alignment constraints with different attributes" minToolsVersion="5.1"/>
         <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
@@ -39,7 +41,7 @@
                                         <rect key="frame" x="0.0" y="28" width="375" height="64"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="0te-qa-6Uh" id="PSw-Ar-s91">
-                                            <rect key="frame" x="0.0" y="0.0" width="375" height="63.5"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="375" height="64"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <label opaque="NO" userInteractionEnabled="NO" tag="2" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Item" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="SMm-rU-MpL">
@@ -62,8 +64,7 @@
                                                     <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="15"/>
                                                     <state key="normal" title="Edit"/>
                                                     <connections>
-                                                        <action selector="editItem:" destination="0te-qa-6Uh" eventType="touchUpInside" id="cbN-De-Zhm"/>
-                                                        <segue destination="8rJ-Kc-sve" kind="show" identifier="edit" id="sVU-E5-jq6"/>
+                                                        <segue destination="YBZ-9w-kpN" kind="show" identifier="edit" id="mBJ-tT-bri"/>
                                                     </connections>
                                                 </button>
                                                 <label opaque="NO" userInteractionEnabled="NO" tag="1" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Description" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Wb1-Lk-Q2z">
@@ -118,7 +119,98 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="W5J-7L-Pyd" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="824.79999999999995" y="-555.47226386806597"/>
+            <point key="canvasLocation" x="750" y="-555"/>
+        </scene>
+        <!--EditViewController-->
+        <scene sceneID="7LV-Gh-iMP">
+            <objects>
+                <viewController title="EditViewController" id="YBZ-9w-kpN" customClass="EditViewController" customModule="JaismeenApp" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="WW1-QN-QhF"/>
+                        <viewControllerLayoutGuide type="bottom" id="Pcj-MM-k2f"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="Qit-Ab-Y2R">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="bezel" placeholder="Item Name" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="uG0-Ot-zoI">
+                                <rect key="frame" x="41" y="158" width="296" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="30" id="IHG-fg-qbF"/>
+                                </constraints>
+                                <nil key="textColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="bezel" placeholder="Item Description" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Li8-ra-B7d">
+                                <rect key="frame" x="41" y="205" width="296" height="30"/>
+                                <nil key="textColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Edit Item" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="zNh-zM-jqF">
+                                <rect key="frame" x="129" y="110" width="107" height="21"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="107" id="c6c-GO-Ljk"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="iNS-VA-xIF">
+                                <rect key="frame" x="218" y="260" width="68" height="30"/>
+                                <color key="backgroundColor" red="0.0" green="0.0" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="17"/>
+                                <color key="tintColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <state key="normal" title="Update"/>
+                                <connections>
+                                    <action selector="updateBtn:" destination="YBZ-9w-kpN" eventType="touchUpInside" id="pS0-Ci-AVF"/>
+                                </connections>
+                            </button>
+                            <button contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="y8I-Su-5c4">
+                                <rect key="frame" x="70" y="260" width="61" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="61" id="MnL-KC-akV"/>
+                                    <constraint firstAttribute="height" constant="30" id="ttE-g4-5rm"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="17"/>
+                                <state key="normal" title="Reset"/>
+                                <connections>
+                                    <action selector="resetBtn:" destination="YBZ-9w-kpN" eventType="touchUpInside" id="km3-h3-MDk"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="uG0-Ot-zoI" firstAttribute="leading" secondItem="Qit-Ab-Y2R" secondAttribute="leadingMargin" constant="25" id="021-ej-yp4"/>
+                            <constraint firstItem="Li8-ra-B7d" firstAttribute="top" secondItem="uG0-Ot-zoI" secondAttribute="bottom" constant="17" id="0Ln-ag-I88"/>
+                            <constraint firstItem="uG0-Ot-zoI" firstAttribute="leading" secondItem="Li8-ra-B7d" secondAttribute="leading" id="1EZ-bQ-2eE"/>
+                            <constraint firstItem="y8I-Su-5c4" firstAttribute="baseline" secondItem="iNS-VA-xIF" secondAttribute="firstBaseline" id="2Mk-ei-yTY"/>
+                            <constraint firstItem="iNS-VA-xIF" firstAttribute="baseline" secondItem="y8I-Su-5c4" secondAttribute="firstBaseline" id="BSe-5q-mF5"/>
+                            <constraint firstItem="uG0-Ot-zoI" firstAttribute="top" secondItem="zNh-zM-jqF" secondAttribute="bottom" constant="27" id="FIq-S7-YSm"/>
+                            <constraint firstItem="zNh-zM-jqF" firstAttribute="top" secondItem="WW1-QN-QhF" secondAttribute="bottom" constant="46" id="Fmq-rY-AUx"/>
+                            <constraint firstItem="y8I-Su-5c4" firstAttribute="top" secondItem="Li8-ra-B7d" secondAttribute="bottom" constant="25" id="OUm-j7-oza"/>
+                            <constraint firstItem="y8I-Su-5c4" firstAttribute="top" secondItem="iNS-VA-xIF" secondAttribute="top" id="hY4-TK-yLu"/>
+                            <constraint firstItem="iNS-VA-xIF" firstAttribute="leading" secondItem="y8I-Su-5c4" secondAttribute="trailing" constant="87" id="ivK-uu-6c8"/>
+                            <constraint firstItem="Pcj-MM-k2f" firstAttribute="top" secondItem="y8I-Su-5c4" secondAttribute="bottom" constant="377" id="jGT-fK-Cpi"/>
+                            <constraint firstItem="uG0-Ot-zoI" firstAttribute="trailing" secondItem="Li8-ra-B7d" secondAttribute="trailing" id="mAD-nZ-Jnj"/>
+                            <constraint firstItem="y8I-Su-5c4" firstAttribute="leading" secondItem="Qit-Ab-Y2R" secondAttribute="leadingMargin" constant="54" id="mLg-En-bcT"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="uG0-Ot-zoI" secondAttribute="trailing" constant="22" id="qyP-gI-Jyn"/>
+                            <constraint firstItem="zNh-zM-jqF" firstAttribute="leading" secondItem="Qit-Ab-Y2R" secondAttribute="leading" constant="129" id="r9a-D8-HQ3"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="iNS-VA-xIF" secondAttribute="trailing" constant="73" id="tFS-6p-6L3"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" title="Edit Task" id="B9W-5i-bWJ">
+                        <barButtonItem key="backBarButtonItem" title="&lt;" id="jjD-v1-1zw"/>
+                    </navigationItem>
+                    <connections>
+                        <outlet property="editItemDesc" destination="Li8-ra-B7d" id="ZMc-9P-em8"/>
+                        <outlet property="editItemName" destination="uG0-Ot-zoI" id="M5c-AN-ZXF"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="zcq-zF-keV" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2514" y="-555"/>
         </scene>
         <!--Add Item-->
         <scene sceneID="wg7-f3-ORb">
@@ -132,7 +224,7 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Add / Update Item" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="AD2-zd-ksP">
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Add New Item" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="AD2-zd-ksP">
                                 <rect key="frame" x="131" y="50" width="112" height="21"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="112" id="FKp-9f-V0E"/>
@@ -212,7 +304,4 @@
         <image name="first" width="30" height="30"/>
         <image name="second" width="30" height="30"/>
     </resources>
-    <inferredMetricsTieBreakers>
-        <segue reference="sVU-E5-jq6"/>
-    </inferredMetricsTieBreakers>
 </document>

@@ -2,9 +2,9 @@
 //  TaskManager.swift
 //  JaismeenApp
 //
-//  Created by Student on 2017-02-21.
+//  Created by Jaismeen Sandhu(300877728) on 2017-02-21.
 //  Copyright © 2017 proApptive. All rights reserved.
-//
+// Individual Cells Page
 
 import UIKit
 import Firebase
@@ -31,7 +31,6 @@ class TaskManager: UITableViewCell {
     
     var indexPath: NSIndexPath!
  
-    
   
    @IBAction func changeStatus(_ sender: UISwitch)
    {
@@ -80,36 +79,9 @@ class TaskManager: UITableViewCell {
     }}
     
     
-    @IBAction func editItem(_ sender: UIButton) {
-        
-        if let superview = editbtn.superview // To fetch the Index of Cell edit button
-        {
-            if let cell = superview.superview as? TaskManager
-            {
-                indexPath = myTable.indexPath(for: cell) as NSIndexPath!
-                
-                let count: Int = indexPath.row
-                var itemkey: String!
-                
-                ref = FIRDatabase.database().reference()
-                ref.child("My To Do Items").observe(.value, with: { // To get the key for the row from database
-                    snapshot in
-                    
-                    let childSnap:NSObject = snapshot.children.allObjects[count] as! NSObject
-                    let snap = childSnap as! FIRDataSnapshot
-                    keyvar.key = snap.key
-                    itemkey = keyvar.key
-                    
-                    var saveItem = ToDoItem()
-                    saveItem.name = self.Item.text!
-                    saveItem.description = self.Desc.text!
-                    self.ref.child("My To Do Items").child(itemkey).updateChildValues(saveItem.getDict())
-                    
-                })
-                
-            }}}
-
-  
+       
+    
+    
     override func setSelected(_ selected: Bool, animated: Bool) {
         super.setSelected(selected, animated: animated)
         
